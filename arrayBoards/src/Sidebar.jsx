@@ -2,7 +2,8 @@ function Sidebar() {
   return (
     <div className="w-64 bg-gray-800 text-white flex flex-col">
     <div className="p-4 text-2xl font-bold border-b border-gray-700">
-      Логотип
+      <img src="img/logo-dark.svg" class="h-8 w-auto" alt="Logo Play"></img>
+     
       </div>
 
     <nav className="flex-1 px-2 py-4 space-y-2">
