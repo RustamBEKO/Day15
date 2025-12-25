@@ -1,3 +1,5 @@
+
+
 function Sidebar() {
   return (
     <div className="w-64 bg-gray-800 text-white flex flex-col">
@@ -10,11 +12,11 @@ function Sidebar() {
       
      <a href="#" className="flex items-center p-2 rounded-md text-gray-300 hover:bg-gray-700 hover:text-white transition duration-150 ease-in-out">
 
-        Все задачи
+        Личные задачи
       </a>
      <a href="#" className="flex items-center p-2 rounded-md text-gray-300 hover:bg-gray-700 hover:text-white transition duration-150 ease-in-out">
      
-        Важное
+        Рабочие задачи
       </a>
        <a href="#" className="flex items-center p-2 rounded-md text-gray-300 hover:bg-gray-700 hover:text-white transition duration-150 ease-in-out">
         Завершенные

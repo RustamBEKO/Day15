@@ -1,0 +1,27 @@
+.button {
+    background: #2563eb;
+    color: #fff;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+
+    &:hover {
+        background: #1d4ed8;
+    }
+
+    &--danger {
+     background: #dc2626;
+     color: #fff;
+     padding: 4px 8px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 0.9em;
+ 
+     &:hover {
+         background: #b91c1c;
+     }
+    }
+}
