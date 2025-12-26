@@ -1,1 +1,22 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+@import "tailwindcss";
 
+.taskNest {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $color-background;
+    border-radius: $border-radius;
+    border: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    @include transition(box-shadow);
+}
+
+.sideBar {
+      @media (max-width: 480px) {
+    display: none;
+  }
+    
+
+}
