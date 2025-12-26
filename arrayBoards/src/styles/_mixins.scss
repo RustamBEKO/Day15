@@ -1,0 +1,21 @@
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin transition($property) {
+  transition: $property 0.2s ease;
+}

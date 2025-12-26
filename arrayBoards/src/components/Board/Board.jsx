@@ -1,5 +1,5 @@
 import { useState } from 'react';           
-import styles from './Board.module.css';
+import styles from './Board.module.scss';
 import { tasks as initialTasks} from '../../data/tasks';
 
 
@@ -37,7 +37,7 @@ const [tasks, setTasks] = useState(initialTasks);
       <ul className="space-y-3">
         {tasks.map((task) => (
           <li key={task.id} className="bg-white grid grid-cols-[0.15fr_1fr_3fr_0.5fr] gap-auto p-4 text-l  gap-2 justify-between border border-gray-300 border-r-8 border-l-8 hover:bg-gray-100 shadow-lg">
-            <svg className="h-[1lh] w-5.5 shrink-0" viewBox="0 0 22 22" fill="none" stroke-linecap="square">
+            <svg className="h-5 w-5.5 shrink-0" viewBox="0 0 22 22" fill="none" stroke-linecap="square">
               
               <circle cx="11" cy="11" r="11" class="fill-sky-400" />
               <circle cx="11" cy="11" r="10.5" class="stroke-sky-400" />

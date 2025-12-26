@@ -1,0 +1,102 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.mainDashboard {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $color-background;
+    border-radius: $border-radius;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    @include transition(box-shadow);
+}
+
+
+.mainDashboard h2 {
+    font-size: 1,5em;
+    margin-bottom: 20px;
+
+    color: $color-primary;
+}
+
+.mainDashboard ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainDashboard li {
+    margin-bottom: 8px;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainDashboard li:hover {
+    box-shadow: #555 4px 4px 12px 0px;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.mainDashboard textarea {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: $color-background;
+}
+
+.mainDashboard input[type="date"] {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: $color-background;
+}
+
+.mainDashboard select {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: $color-background;
+}
+
+.mainDashboard select option {
+    background-color: #ffffff;
+    color: #02153a;
+}
+
+.mainDashboard button {
+    padding: 6px 12px;
+    background-color: #e21616;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.mainDashboard button:hover {
+    background-color: #b91c1c;
+}
+
+.mainDashboard button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.mainDashboard button:disabled:hover {
+    background-color: #ccc;
+}
