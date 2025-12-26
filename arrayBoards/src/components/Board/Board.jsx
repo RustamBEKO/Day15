@@ -39,7 +39,7 @@ const [tasks, setTasks] = useState(initialTasks);
         {tasks.map((task) => (
           <li key={task.id} className="bg-white grid grid-cols-[0.15fr_1fr_3fr_0.5fr] gap-auto p-4 text-l  gap-2 justify-between border border-gray-300 border-r-8 border-l-8 hover:bg-gray-100 shadow-lg">
         
-        <div class="text-[#2b9875] bg-white backdrop-blur-xl p-1 rounded-lg">
+        {/* <div class="text-[#2b9875] bg-white backdrop-blur-xl p-1 rounded-lg">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -54,7 +54,14 @@ const [tasks, setTasks] = useState(initialTasks);
             d="m4.5 12.75 6 6 9-13.5"
           ></path>
         </svg>
-      </div>
+      </div> */}
+
+       <input
+          id="Option1"
+          class="size-4 rounded border-gray-300"
+          type="checkbox"
+        />
+
             <span className="text-l font-bold">{task.title}</span>{task.description} от {task.createdAt}
               <button onClick={() => handleRemoveTask(task.id)} 
       class="text-gray-600 text-gray-600 hover:bg-white/5 p-1 rounded-md transition-colors ease-linear"
