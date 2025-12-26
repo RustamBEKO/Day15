@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import TaskNest from "./components/TaskNest/TaskNest";
 import styles from "./App.module.scss";
 const App = () => { return (<TaskNest />)}

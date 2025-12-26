@@ -1,17 +1,28 @@
 @import "../../styles/variables";
 @import "../../styles/mixins";
+@import "tailwindcss";
 
 .mainDashboard {
     width: 100%;
-    max-width: 600px;
+
     margin: 0 auto;
     padding: 20px;
     background-color: $color-background;
     border-radius: $border-radius;
+    border: 0px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     @include transition(box-shadow);
 }
+.taskBoard {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $color-dark-background;
+    border-radius: $border-radius;
+    border: 0px;
 
+    @include transition(box-shadow);
+}
 
 .mainDashboard h2 {
     font-size: 1,5em;
@@ -30,8 +41,16 @@
     margin-bottom: 8px;
     font-size: 1em;
     display: flex;
-    justify-content: space-between;
+    border-color: #02153a;
+    border-radius: 8px;
+    background-color: #dadbdd;
+    color: #232323;
+    box-sizing: border-box;
+    box-shadow: #232323;
+    text-align: right;
     align-items: center;
+    justify-content: left;
+
 }
 
 .mainDashboard li:hover {
@@ -83,9 +102,10 @@
     background-color: #e21616;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 0.9em;
+    font-size: 1em;
+    font-style: normal;
 }
 
 .mainDashboard button:hover {

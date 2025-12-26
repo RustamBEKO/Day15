@@ -2,7 +2,7 @@
 export const tasks = [
         {
       id: 1,
-      title: "Собственное приложение на React TaskNest",
+      title: "Собственное приложение на React TaskApp",
       description: "Доска для заданий и конспектов по React",
       createdAt: "2025-03-15",
       deadline: "2026-03-15",
